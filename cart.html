@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <link rel="icon" type="image/x-icon" href="./assets/img/LOGOWED.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel="stylesheet" href="./assets/css/fontawesome-free-6.1.1-web/css/all.css">
+        <link rel="stylesheet" href="./assets/css/base1.css">
+        <link rel="stylesheet" href="./assets/css/cart.css"> 
+        <link rel="stylesheet" href="./assets/css/reponsive_cart.css">
+        <title>Cart</title>
+    </head>
+    <body>
+        <div class="loading">
+            <div class="loading-box">
+                <div class="loading_div" style="--value: 1"></div>
+                <div class="loading_div" style="--value: 2"></div>
+                <div class="loading_div" style="--value: 3"></div>
+                <div class="loading_div" style="--value: 4"></div>
+                <div class="loading_div" style="--value: 5"></div>
+                <div class="loading_div" style="--value: 6"></div>
+                <div class="loading_div" style="--value: 7"></div>
+                <div class="loading_div" style="--value: 8"></div>
+                <i>Loading...</i>
+
+            </div>
+        </div>
+        <div class="header__scroll">
+            <div class="header__scroll-info hide-on-mobile">
+                <div class="grid wide">
+                    <div class="header__scroll-info-more">
+                        <ul class="scroll__info-list">
+                            <li class="scroll__info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span class=""> Hotline: +8412345678</span>
+                            </li>
+                            <li class="scroll__info-item">
+                                <span class="header__scroll-info-connect">
+                                    Connect with us
+                                </span>
+                                <a href="https://www.facebook.com/huynhkhoa85/" target="_blank" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/khoa_ka_0304/" target="_blank" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="header__scroll-user hide-on-mobile">
+                            <div class="scroll-user-img">
+                                <img src="./assets/img/user.png" alt="" >
+                            </div>
+                            <span class="scroll-user-name">Huynh Dang Khoa</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__scroll-info-logo">
+                <div class="grid wide">
+                    <div class="header__scroll-logo">
+                        <div class="row">
+                            <div class=" p-6 t-6 m-0 ">
+                                <a href="./index.html" class="header__scroll-logo-link">
+                                    <img src="./assets/img/LOGOWED.png" class="header__scroll-logo-img" alt="">
+                                </a>
+                                <span class="header__scroll-logo-name">Cart</span>
+                            </div>
+                            <div class=" p-6 t-5 m-10">
+                                <div class="header__scroll-with-search">
+                                    <input type="text" class="header__scroll-with-search-input" placeholder="Find something?">
+                                    <i class="header__scroll-with-search-icon fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="p-0 t-0 m-2">
+                                <label for="header__modal-btn-open" class="header__scroll_sudnav">
+                                    <i class="header__scroll_sudnav-icon fa-solid fa-bars"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" hidden id="header__modal-btn-open" class="header__modal-btn-open">
+        <label for="header__modal-btn-open" class="header__modal-over-play"></label>
+        <label for="header__modal-btn" class="header__modal-body hide-on-pc-tablet">
+            <label for="header__modal-btn-open" class="header__modal-body-icon">
+                <i class="fa-solid fa-xmark header__modal-body-icon-close"></i>
+            </label>
+            <span class="header__scroll-user">
+                <div class="scroll-user-img">
+                    <img src="./assets/img/user.png" alt="" >
+                </div>
+                <span class="scroll-user-name">Huynh Dang Khoa</span>
+            </span>
+            <div class="header__modal-body-footer">
+                <ul class="scroll__info-list">
+                    <li class="scroll__info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class=""> Hotline: +8412345678</span>
+                    </li>
+                    <li class="scroll__info-item">
+                        <span class="header__scroll-info-connect">
+                            Connect with us
+                        </span>
+                        <a href="https://www.facebook.com/huynhkhoa85/" target="_blank" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/khoa_ka_0304/" target="_blank" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </label>
+        <div class="container">
+            <div class="grid wide">
+                <div class="row ">
+                    <div class=" p-12 t-12">
+                        <div class="container__modyfi hide-on-mobile">
+                            <div class="row">
+                                <div class=" p-6 t-6">
+                                    <div class="container__modyfi-check">
+                                        <input type="checkbox" >
+                                        <span class="container__modyfi-name">Product</span>
+                                    </div>
+                                </div>
+                                <div class=" p-6 t-6">
+                                    <div class="row">
+                                        <div class=" p-3 t-3">
+                                            <span class="container__modyfi-heading container__modyfi-unit-price">Unit Price</span>
+                                        </div>
+                                        <div class=" p-3 t-3">
+                                            <span class="container__modyfi-heading container__modyfi-unit-Quantity">Quantity</span>
+                                        </div>
+                                        <div class=" p-3 t-3">
+                                            <span class="container__modyfi-heading container__modyfi-unit-Amount-money">Price</span>
+                                        </div>
+                                        <div class=" p-3 t-3">
+                                            <span class="container__modyfi-heading container__modyfi-Operation">Operation</span>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" p-12 t-12 m-12">
+                        <div class="brand-shop-product">
+                            <div class="brand-shop-product-info">
+                                <input type="checkbox">
+                                <i class="brand-shop-product-info-icon fa-solid fa-shop"></i>
+                                <h3 class="brand-shop-product-name">NIKE</h3>
+                            </div>
+                            <a href="./Product.html" class="brand-shop-product-content-link">
+                                <div class="brand-shop-product-content">
+                                    <div class="row">                               
+                                            <div class=" p-6 t-6 m-12">
+                                                <div class="brand-shop-product-image">
+                                                    <input type="checkbox" name="" id="">
+                                                    <img src="./assets/img/NIKE_AIR_FORCE_1.jpg" alt="" class="brand-shop-product-img">
+                                                    <span class="brand-shop-product-image-name">NIKE_AIR_FORCE_1</span>
+                                                    <span class="brand-shop-product-type">Type: White</span>
+                                                </div>
+                                            </div>
+                                            <div class=" p-6 t-6 m-12">
+                                                <div class="brand-shop-product-image-info">
+                                                    <div class=" p-12 m-12">
+                                                        <div class="row">
+                                                            <div class=" p-3 t-3  m-0">
+                                                                <span class="brand-shop-product-unit-price">$100.00</span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Quantity">
+                                                                    <button class="brand-shop-product-Quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
+                                                                    <span class="brand-shop-product-Quantity-number">1</span>
+                                                                    <button class="brand-shop-product-Quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
+                        
+                                                                </span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Amount-money">$100.00</span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Operation">Delete</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+        
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./Product.html" class="brand-shop-product-content-link">
+                                <div class="brand-shop-product-content">
+                                    <div class="row">                               
+                                            <div class=" p-6 t-6 m-12">
+                                                <div class="brand-shop-product-image">
+                                                    <input type="checkbox" name="" id="">
+                                                    <img src="./assets/img/NIKE_AIR_FORCE_1.jpg" alt="" class="brand-shop-product-img">
+                                                    <span class="brand-shop-product-image-name">NIKE_AIR_FORCE_1</span>
+                                                    <span class="brand-shop-product-type">Type: White</span>
+                                                </div>
+                                            </div>
+                                            <div class=" p-6 t-6 m-12">
+                                                <div class="brand-shop-product-image-info">
+                                                    <div class=" p-12 m-12">
+                                                        <div class="row">
+                                                            <div class=" p-3 t-3  m-0">
+                                                                <span class="brand-shop-product-unit-price">$100.00</span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Quantity">
+                                                                    <button class="brand-shop-product-Quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
+                                                                    <span class="brand-shop-product-Quantity-number">1</span>
+                                                                    <button class="brand-shop-product-Quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
+                        
+                                                                </span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Amount-money">$100.00</span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Operation">Delete</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+        
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./Product.html" class="brand-shop-product-content-link">
+                                <div class="brand-shop-product-content">
+                                    <div class="row">                               
+                                            <div class=" p-6 t-6 m-12">
+                                                <div class="brand-shop-product-image">
+                                                    <input type="checkbox" name="" id="">
+                                                    <img src="./assets/img/NIKE_AIR_FORCE_1.jpg" alt="" class="brand-shop-product-img">
+                                                    <span class="brand-shop-product-image-name">NIKE_AIR_FORCE_1</span>
+                                                    <span class="brand-shop-product-type">Type: White</span>
+                                                </div>
+                                            </div>
+                                            <div class=" p-6 t-6 m-12">
+                                                <div class="brand-shop-product-image-info">
+                                                    <div class=" p-12 m-12">
+                                                        <div class="row">
+                                                            <div class=" p-3 t-3  m-0">
+                                                                <span class="brand-shop-product-unit-price">$100.00</span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Quantity">
+                                                                    <button class="brand-shop-product-Quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
+                                                                    <span class="brand-shop-product-Quantity-number">1</span>
+                                                                    <button class="brand-shop-product-Quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
+                        
+                                                                </span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Amount-money">$100.00</span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Operation">Delete</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+        
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./Product.html" class="brand-shop-product-content-link">
+                                <div class="brand-shop-product-content">
+                                    <div class="row">                               
+                                            <div class=" p-6 t-6 m-12">
+                                                <div class="brand-shop-product-image">
+                                                    <input type="checkbox" name="" id="">
+                                                    <img src="./assets/img/NIKE_AIR_FORCE_1.jpg" alt="" class="brand-shop-product-img">
+                                                    <span class="brand-shop-product-image-name">NIKE_AIR_FORCE_1</span>
+                                                    <span class="brand-shop-product-type">Type: White</span>
+                                                </div>
+                                            </div>
+                                            <div class=" p-6 t-6 m-12">
+                                                <div class="brand-shop-product-image-info">
+                                                    <div class=" p-12 m-12">
+                                                        <div class="row">
+                                                            <div class=" p-3 t-3  m-0">
+                                                                <span class="brand-shop-product-unit-price">$100.00</span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Quantity">
+                                                                    <button class="brand-shop-product-Quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
+                                                                    <span class="brand-shop-product-Quantity-number">1</span>
+                                                                    <button class="brand-shop-product-Quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
+                        
+                                                                </span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Amount-money">$100.00</span>
+                                                            </div>
+                                                            <div class=" p-3 t-3 m-4">
+                                                                <span class="brand-shop-product-Operation">Delete</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+        
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home__product-buy-cart">
+           <div class="grid wide">
+               <div class="home__product-buy-cart-item">
+                   <div class="row">
+                        <div class=" p-6 t-6 m-12">
+                            <div class="home__product-buy-cart-select">
+                                <input type="checkbox">
+                                <span class="buy-cart-select-all">Select all</span>
+                                <span class="buy-cart-select-delete">Delete</span>
+                            </div>
+                        </div>
+                        <div class=" p-6 t-6 m-12">
+                            <div class="home__product-buy-cart-buys">
+                                <div class="home__product-buy-cart-buys-btn">Purchase</div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+           
+        
+        <div class="home__product-contact-category">
+            <div class="grid wide">
+                <div class="row">
+                    <div class=" col p-4 t-6 m-12 ">
+                        <h3 class="home__product-contact_heading">FIND STORE NEAR YOU</h3>
+                        <span class="btn btn--primary home__product-contact-btn">FIND A STORE</span>
+                    </div>
+                    <div class=" col  p-4 t-6 m-12">
+                        <h3 class="home__product-contact_heading">FOLLOW ME IN</h3>
+                        <a href="https://github.com/KAkhoa12" target="_blank" class="home__product-contact_heading-icon-link">
+                            <i class="fa-brands fa-github home__product-contact-icon"></i>
+                        </a>
+                        <a href="https://www.facebook.com/huynhkhoa85/" target="_blank" class="home__product-contact_heading-icon-link">
+                            <i class="fa-brands fa-facebook home__product-contact-icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/khoa_ka_0304/"  target="_blank" class="home__product-contact_heading-icon-link">
+                            <i class="fa-brands fa-instagram home__product-contact-icon"></i>
+                        </a>
+                    </div>
+                    <div class=" col p-4 t-6 m-12">
+                        <h3 class="home__product-contact_heading">JOIN OUR EMAIL LIST</h3>
+                        <span class="home__product-contact-decription">Subscribe for the latest product news, events, and updates.</span>
+                        <div class="home__product-contact-sudmit">
+                            <input type="text" class="home__product-contact-sudmit-input">
+                            <button class="home__product-contact-sudmit-btn ">
+                                <i class="fa-solid fa-arrow-right "></i>
+                            </button>
+                        </div>
+                        <h3 class="home__product-contact_heading">PREFER TEXT UPDATES?</h3>
+                        <button class="home__product-contact-sudmit-sign-btn ">
+                            SIGN UP FOR SMS ALEARTS
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        <footer class="footer">
+            <div class="footer__info">
+                <a href="./index.html" class="footer__info-Logo-link">
+                    <img src="./assets/img/LOGOWED.png" alt="" class="footer__info-Logo">
+                </a>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col p-3 t-3 m-12">
+                            <h3 class="footer__info-heading">SHOP</h3>
+                            <ul class="footer__info-list">
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Brand</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link"> Sneakers</a></li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link"> Boot</a></li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Hight wekk</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Sandan</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Men</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Women</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Child</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col p-3 t-3 m-12">
+                            <h3 class="footer__info-heading">MY ACOUNT</h3>
+                            <ul class="footer__info-list">
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Sign in</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Register</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Vip Discount</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link"> Primary Discount</a></li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Basic Discount</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col p-3 t-3 m-12">
+                            <h3 class="footer__info-heading">GET HELP</h3>
+                            <ul class="footer__info-list">
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link"> Help Center?</a></li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link"> Shopping guide</a></li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link"> Feedback via email</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col p-3 t-3 m-12">
+                            <h3 class="footer__info-heading">ABOUT </h3>
+                            <ul class="footer__info-list">
+                                <li class="footer__info-item"> <a href="./about_us.html" class="footer__info-item-link"> About us</a></li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link"> My git</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Responsibility</a> </li>
+                                <li class="footer__info-item"> <a href="#" class="footer__info-item-link">Newsroom</a> </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="footer__license">
+                        <div class="row">
+                            <div class="col p-12">
+                                <span>
+                                    ©2022 - Copyright belongs to KhoaKA12 - photos belongs to kingshoes.vn
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-6">
+                                <a href="#" class="footer__license-link">
+                                    Terms of Use
+                                </a>
+                                <a href="#" class="footer__license-link">
+                                    Privacy Policy
+                                </a>
+                                <a href="#" class="footer__license-link">
+                                    Fur Policy
+                                </a>
+                                <a href="#" class="footer__license-link">
+                                    Interest-Based 
+                                </a>
+                                <a href="#" class="footer__license-link">
+                                    Ads24/7 Customer Service (800) 927-7671
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+            
+            
+            $(window).on('load',function(){
+                $('.loading_div::before').fadeOut('slow');
+                $('.loading').delay(2000).fadeOut('slow');
+                $('body').delay(2000).css({'overflow':'visible'})
+            })
+           
+        </script>
+        <script>
+            let count = 1;
+            const value = document.querySelector(".brand-shop-product-Quantity-number");
+            const btns = document.querySelectorAll(".brand-shop-product-Quantity-btn");
+            btns.forEach(function (btn) {
+            btn.addEventListener("click", function (e) {
+            const styles = e.currentTarget.classList;
+            if (styles.contains("minus")) {
+            count--;
+            } else if (styles.contains("plus")) {
+            count++;
+            } 
+            value.textContent = count;
+            });
+            });
+
+            
+        </script>
+
+    </body>
+</html> 
